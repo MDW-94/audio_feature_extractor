@@ -1,0 +1,15 @@
+[project]
+name = "audio-feature-extractor"
+version = "0.1.0"
+description = "Upload an audio file and extract audio features to JSON"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "librosa",
+]
+
+[tool.uv]
+override-dependencies = [
+  "llvmlite==0.45.1",
+  "numba==0.62.1"
+]
